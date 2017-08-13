@@ -1,0 +1,1 @@
+alpha_vantage_api_key successfully_read_from_config
