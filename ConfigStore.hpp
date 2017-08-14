@@ -1,3 +1,8 @@
+/**
+ * ConfigStore is a singleton responsible for reading in config files
+ * and providing an API to read values from them.
+ */
+
 #include <boost/optional.hpp>
 #include <fstream>
 #include <string>
