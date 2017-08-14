@@ -3,6 +3,8 @@
  * and providing an API to read values from them.
  */
 
+#pragma once
+
 #include <boost/optional.hpp>
 #include <fstream>
 #include <string>
