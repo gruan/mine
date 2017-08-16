@@ -42,7 +42,7 @@ CXXFLAGS := -std=c++1z
 # C/C++ flags
 CPPFLAGS := -g -Wall -Wextra -pedantic
 # linker flags
-LDFLAGS :=
+LDFLAGS := -Llib -lcurl -lcurlpp
 # flags required for dependency generation; passed to compilers
 DEPFLAGS = -MT $@ -MD -MP -MF $(DEPDIR)/$*.Td
 
