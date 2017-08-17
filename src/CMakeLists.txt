@@ -23,7 +23,8 @@ find_package(OpenSSL 1.0.0 REQUIRED)
 
 set(SOURCE_FILES
   main.cpp
-  ConfigStore.hpp ConfigStore.cpp
+  ConfigStore.cpp
+  ExchangeReaderBFX.cpp
 )
 
 add_executable(mine ${SOURCE_FILES})
