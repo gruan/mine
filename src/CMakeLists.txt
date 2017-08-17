@@ -25,6 +25,7 @@ set(SOURCE_FILES
   main.cpp
   ConfigStore.cpp
   ExchangeReaderBFX.cpp
+  ExchangeReaderBFXOrderbook.cpp
 )
 
 add_executable(mine ${SOURCE_FILES})
