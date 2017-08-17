@@ -3,13 +3,14 @@
 #include <iostream>
 
 #include "ConfigStore.hpp"
-#include "ExchangeReaderBFX.hpp"
+#include "CurrencyPairEnum.hpp"
+#include "ExchangeReaderBFXOrderbook.hpp"
 
 const std::string ALPHA_VANTAGE_API_KEY = "alpha_vantage_api_key";
 
 int main() {
-  ExchangeReaderBFX reader;
-  reader.subscribeToOrderbookChannel(CurrencyPairEnum::BTCUSD, "P2", "F1");
+  ExchangeReaderBFXOrderbook reader;
+  reader.subscribe(CurrencyPairEnum::BTCUSD, "P2", "F1");
 
   std::ifstream input("config.txt");
   ConfigStore& config = ConfigStore::get();
