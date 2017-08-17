@@ -1,3 +1,0 @@
-curlpp
-libcurl
-boost
